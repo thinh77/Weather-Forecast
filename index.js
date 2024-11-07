@@ -131,7 +131,7 @@ const showDetail = async (tag_id) => {
             Welcome to ${document.getElementById("name-of-city").innerText}
         </span>
     `;
-    document.getElementById("title").innerHTML = document.getElementById("name-of-city").innerText
+    document.getElementById("title").innerText = document.getElementById("name-of-city").innerText
     daily.forEach((element) => {
         const { temp, weather } = element;
         dayOfWeekString.push("Sunday");
