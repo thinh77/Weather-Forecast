@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 1000;
+}
+
+.overview .container {
+    height: 100%;
+}
+
+.con-r {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.con-c1 {
+    width: 100%;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    background: rgb(241, 149, 123);
+    display: block;
+}
+
+.con-c1-r1 {
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.input-box input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: none;
+    border-style: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-guide {
+    text-align: right;
+}
+
+.search-guide span {
+    color: white;
+    font-size: 0.4rem;
+}
+
+.con-c1-r2 {
+    width: 100%;
+}
+
+.info-city-tag {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.info-city-tag span {
+}
+
+.city-name span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.temp {
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    color: rgb(72, 72, 74);
+}
+
+.temp p {
+    margin-bottom: 0;
+}
+
+.temp .degree {
+    background: rgb(72, 72, 74);
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 15px;
+    margin-right: 0.5rem;
+}
+
+.con-c2 {
+    width: 100%;
+    padding: 4rem;
+    padding-right: 6rem;
+    box-sizing: border-box;
+    background: rgb(255, 240, 236);
+    display: block;
+}
+
+.time-row {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 45px;
+    color: rgb(241, 149, 123);
+    word-spacing: 3px;
+}
+
+.time-row #d-m {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 1000;
+    font-style: normal;
+    color: black; 
+    font-size: 15px;
+}
+
+.greet {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(241, 149, 123);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.daily-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgb(241, 149, 123);
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+}
+
+.dow-tag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 149, 123);
+    border-radius: 25px;
+    box-shadow: 9px 8px 0px -1px rgb(72, 72, 74);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dow-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dow-degree {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dow-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.sub-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.day-of-week {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(241, 149, 123);
+    margin-bottom: 2rem;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 1000;
+    font-style: normal;
+    color: rgb(241, 149, 123);
+    margin-bottom: 1rem;
+    word-spacing: 5px;
+}
+
+.dow-detail .sub-cont span {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.bound-city-tag {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .con-r {
+        flex-direction: row;
+    }
+
+    .con-c1 {
+        width: 30%;
+    }
+
+    .con-c2 {
+        width: 70%;
+    }
+
+    .daily-row {
+        flex-direction: row;
+    }
+
+    .dow-tag {
+        width: 11%;
+    }
+
+    .sub-cont {
+        width: 20%;
+    }
+}
+
+.dow-tag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 149, 123);
+    border-radius: 25px;
+    box-shadow: 9px 8px 0px -1px rgb(72, 72, 74);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 1rem 0; /* Add margin for spacing between elements */
+}
+
+@media (min-width: 768px) {
+    .dow-tag {
+        width: 11%;
+        margin: 0 1rem; /* Add margin for spacing between elements in row layout */
+    }
+}
